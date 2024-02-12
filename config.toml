@@ -1,0 +1,47 @@
+# The URL the site will be built for
+base_url = "https://june.fish"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "anatole-zola"
+
+default_language = "en"
+
+[languages.en.translations]
+language_name = "English"
+about = "About"
+home = "Home"
+tags = "Tags"
+archive = "Archive"
+links = "Links"
+date_format = "%Y-%m-%d"
+next_page = "Next Page"
+last_page = "Last Page"
+
+[languages.zh.translations]
+language_name = "中文"
+home = "首页"
+about = "关于"
+tags = "标签"
+archive = "归档"
+links = "友链"
+date_format = "%Y-%m-%d"
+next_page = "下一页"
+last_page = "上一页"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+author = "june"
+
+[extra.social]
+github = "june-fish"
+mastodon = "ordinary.cafe/@june"
+
