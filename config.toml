@@ -9,7 +9,7 @@ dark_theme = "github-dark"
 error_on_missing_language = true
 
 [extra]
-favicon = "images/fishe-smol.png"
+favicon = "favicon.png"
 fediverse = true
 fediverse_creator = "@june@ordinary.cafe"
 
