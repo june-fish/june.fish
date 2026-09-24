@@ -28,7 +28,10 @@
 
           nativeBuildInputs = [
             pkgs.zola
+            pkgs.cacert
           ];
+          SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
+
           buildPhase = ''
             ${pkgs.zola}/bin/zola build
           '';
