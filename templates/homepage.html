@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% component home_page(section: map) %}
+<main>
+    <article>
+        <section class="body">
+            <div class="page-header" style="display: flex; align-items: center;">
+                <img height="150px" src="/images/fishe-smol.png" />
+                blub blub
+            </div>
+            {{ section.content | safe }}
+        </section>
+    </article>
+</main>
+{% endcomponent home_page %}
+
+{% block main_content %}
+    {{<home_page section={section} />}}
+{% endblock main_content %}
