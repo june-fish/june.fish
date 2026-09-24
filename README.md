@@ -2,7 +2,7 @@
 
 ## Git Submodules for Theme
 
-This uses Git submodules to install the [Anatole Theme](https://github.com/longfangsong/anatole-zola).
+This uses Git submodules to install the [Apollo theme](https://github.com/not-matthias/apollo).
 
 Clone repository with submodules:
 ```sh
@@ -13,3 +13,4 @@ Update submodules after you have cloned:
 ```sh
 git submodule update --init --recursive
 ```
+
