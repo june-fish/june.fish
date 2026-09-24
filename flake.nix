@@ -1,5 +1,8 @@
 {
   inputs = {
+    self = {
+      submodules = true;
+    };
     utils.url = "github:numtide/flake-utils";
   };
   outputs =
@@ -19,6 +22,19 @@
             zola
           ];
         };
+        packages.site = pkgs.stdenv.mkDerivation {
+          name = "site";
+          src = ./.;
+
+          nativeBuildInputs = [
+            pkgs.zola
+          ];
+          buildPhase = ''
+            ${pkgs.zola}/bin/zola build
+          '';
+          installPhase = "cp -r public $out";
+        };
+        defaultPackage = self.packages.${system}.site;
       }
     );
 }
