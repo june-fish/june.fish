@@ -18,7 +18,7 @@ socials = [
     { name = "mastodon", url = "https://ordinary.cafe/@june", icon = "mastodon" },
     { name = "github", url = "https://github.com/june-fish", icon = "github" },
     { name = "codeberg", url = "https://codeberg.org/june-fish", icon = "codeberg" },
-    { name = "codeberg", url = "https://sr.ht/~junefish/", icon = "../code" },
+    { name = "codeberg", url = "https://sr.ht/~junefish/", icon = "sourcehut" },
 ]
 
 menu = [
