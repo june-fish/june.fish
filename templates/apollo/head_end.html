@@ -1,56 +1,123 @@
 <style>
+  @font-face {
+    font-family: "Adwaita Sans";
+    src: url("{{ get_url(path='fonts/AdwaitaSans-Regular.woff2') }}") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Sans";
+    src: url("{{ get_url(path='fonts/AdwaitaSans-Italic.woff2') }}") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("{{ get_url(path='fonts/AdwaitaMono-BoldItalic.woff2') }}") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("{{ get_url(path='fonts/AdwaitaMono-Bold.woff2') }}") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("{{ get_url(path='fonts/AdwaitaMono-Italic.woff2') }}") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("{{ get_url(path='fonts/AdwaitaMono-Regular.woff2') }}") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("{{ get_url(path='fonts/LiberationSans-BoldItalic.woff2') }}") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("{{ get_url(path='fonts/LiberationSans-Bold.woff2') }}") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("{{ get_url(path='fonts/LiberationSans-Italic.woff2') }}") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("{{ get_url(path='fonts/LiberationSans-Regular.woff2') }}") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("{{ get_url(path='fonts/LiberationSerif-BoldItalic.woff2') }}") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("{{ get_url(path='fonts/LiberationSerif-Bold.woff2') }}") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("{{ get_url(path='fonts/LiberationSerif-Italic.woff2') }}") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("{{ get_url(path='fonts/LiberationSerif-Regular.woff2') }}") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+
   :root.light {
     --primary-color: #e4821f;
     --bg-0: #eee;
     --bg-1: #ddd;
     --bg-2: #ccc;
   }
-  :root.dark{
+  :root.dark {
     --primary-color: #e4821f;
     --bg-0: #111;
     --bg-1: #222;
-    --bg-1: #333;
+    --bg-2: #333;
   }
   :root {
-    @font-face {
-      font-family: "Adwaita Sans";
-      src:
-        url("fonts/AdwaitaSans-Italic.woff2") format("woff2");
-        url("fonts/AdwaitaSans-Regular.woff2") format("woff2");
-    }
-    @font-face {
-      font-family: "Adwaita Mono";
-      src:
-        url("fonts/AdwaitaMono-BoldItalic.woff2") format("woff2");
-        url("fonts/AdwaitaMono-Bold.woff2") format("woff2");
-        url("fonts/AdwaitaMono-Italic.woff2") format("woff2");
-        url("fonts/AdwaitaMono-Regular.woff2") format("woff2");
-    };
-    @font-face {
-      font-family: "Liberation Sans";
-      src:
-        url("fonts/LiberationSans-BoldItalic.woff2") format("woff2");
-        url("fonts/LiberationSans-Bold.woff2") format("woff2");
-        url("fonts/LiberationSans-Italic.woff2") format("woff2");
-        url("fonts/LiberationSans-Regular.woff2") format("woff2");
-    };
-    @font-face {
-      font-family: "Liberation Serif";
-      src:
-        url("fonts/LiberationSerif-BoldItalic.woff2") format("woff2");
-        url("fonts/LiberationSerif-Bold.woff2") format("woff2");
-        url("fonts/LiberationSerif-Italic.woff2") format("woff2");
-        url("fonts/LiberationSerif-Regular.woff2") format("woff2");
-    };
     --text-font: "Adwaita Mono";
     --header-font: "Liberation Serif";
     --code-font: "Adwaita Mono";
     --mono-text-font: "Adwaita Mono";
   }
-  nav {
-    a {
-      font-family: "Liberation Serif";
-      --text-font: "Liberation Serif";
-    };
-  };
+  nav a {
+    font-family: "Liberation Serif";
+    --text-font: "Liberation Serif";
+  }
 </style>
