@@ -16,4 +16,17 @@
 
 {% block main_content %}
     {{<home_page section={section} />}}
+    {{<tiles tiles={
+        [
+            {
+                "img": "images/tiles/hostedonstack.webp",
+                "url": "https://fyrastack.com"
+            },
+            {
+                "img": "images/tiles/jaiden.png",
+                "url": "https://jaiden.sh"
+            }
+        ]
+    }/>}}
 {% endblock main_content %}
+

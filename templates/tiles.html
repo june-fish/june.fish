@@ -1,0 +1,25 @@
+{% component tiles(tiles: array) %}
+<style>
+  .tiles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10vh;
+      a {
+          &:hover {
+              background-color: var(--background-color);
+          }
+      }
+      img {
+            border-radius: 0;
+      }
+  }
+</style>
+<div class="tiles">
+    {% for tile in tiles %}
+    <a href="{{ tile.url }}">
+      <img src="{{ get_url(path=tile.img) }}" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    {% endfor %}
+</div>
+{% endcomponent tiles %}
