@@ -1,0 +1,9 @@
+{
+  "m.homeserver": {
+    "base_url": "https://m.june.fish"
+  },
+  "org.matrix.msc3575.proxy": {
+    "url": "https://m.june.fish"
+  }
+}
+

@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    
+<head>
+    
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="base" content="https://june.fish" />
+
+    
+        <meta name="fediverse:creator"
+              content="@june@ordinary.cafe" />
+    
+
+    
+
+    
+    
+    
+        <title>
+            
+                Talks
+            
+        </title>
+
+        
+            <meta property="og:title"
+                  content="junefish" />
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+    
+        <link rel="icon"
+              type="image/png"
+              href="https://june.fish/favicon.png" />
+    
+
+    
+    
+        <link href=https://june.fish/fonts.css rel="stylesheet" />
+    
+
+    
+    
+        
+
+        
+            
+            
+
+            <script data-goatcounter="https://junefish.goatcounter.com/count"
+                    async
+                    src="https://june.fish/js/count.js"></script>
+            <noscript>
+                
+                <img src="https://junefish.goatcounter.com//count?p=/talks/&t=junefish" />
+            </noscript>
+        
+
+        
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+    
+
+    
+    
+        
+            <link id="syntaxLightStyle"
+                  rel="stylesheet"
+                  type="text/css"
+                  href="https://june.fish/giallo-light.css" />
+            <link id="syntaxDarkStyle"
+                  rel="stylesheet"
+                  type="text/css"
+                  href="https://june.fish/giallo-dark.css"
+                  disabled />
+        
+    
+
+    
+    
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://june.fish/theme/light.css" />
+        <link id="darkModeStyle"
+              rel="stylesheet"
+              type="text/css"
+              href="https://june.fish/theme/dark.css" />
+    
+
+    
+        
+            <script>
+                var themeToggleMode = "toggle";
+            </script>
+        
+        <script src=https://june.fish/js/themetoggle.js></script>
+
+        
+            <script>
+                setTheme(getSavedTheme());
+            </script>
+        
+    
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="https://june.fish/main.css" />
+
+    
+
+    <style>
+  @font-face {
+    font-family: "Adwaita Sans";
+    src: url("https://june.fish/fonts/AdwaitaSans-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Sans";
+    src: url("https://june.fish/fonts/AdwaitaSans-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+
+  :root.light {
+    --primary-color: #e4821f;
+    --bg-0: #eee;
+    --bg-1: #ddd;
+    --bg-2: #ccc;
+  }
+  :root.dark {
+    --primary-color: #e4821f;
+    --bg-0: #111;
+    --bg-1: #222;
+    --bg-2: #333;
+  }
+  :root {
+    --text-font: "Adwaita Mono";
+    --header-font: "Liberation Serif";
+    --code-font: "Adwaita Mono";
+    --mono-text-font: "Adwaita Mono";
+  }
+  nav a {
+    font-family: "Liberation Serif";
+    --text-font: "Liberation Serif";
+  }
+</style>
+
+</head>
+
+
+    <body>
+        
+
+        <div class="left-content">
+            
+            
+        </div>
+
+        <div class="content">
+            <nav>
+    <div class="left-nav">
+        
+            <a href=https://june.fish>junefish</a>
+        
+
+
+        <div class="socials">
+            
+                
+            
+            
+                <a rel='me' href="mailto:web@june.fish" class="social">
+                    <img alt="email"
+                         src="https://june.fish/icons/social/email.svg" />
+                </a>
+            
+                <a rel='me' href="https://ordinary.cafe/@june" class="social">
+                    <img alt="mastodon"
+                         src="https://june.fish/icons/social/mastodon.svg" />
+                </a>
+            
+                <a rel='me' href="https://github.com/june-fish" class="social">
+                    <img alt="github"
+                         src="https://june.fish/icons/social/github.svg" />
+                </a>
+            
+                <a rel='me' href="https://codeberg.org/june-fish" class="social">
+                    <img alt="codeberg"
+                         src="https://june.fish/icons/social/codeberg.svg" />
+                </a>
+            
+                <a rel='me' href="https://sr.ht/~junefish/" class="social">
+                    <img alt="codeberg"
+                         src="https://june.fish/icons/social/sourcehut.svg" />
+                </a>
+            
+        </div>
+    </div>
+
+    <div class="right-nav">
+        
+            <a href=https://june.fish/posts style="margin-right: 0.5em">/posts</a>
+        
+            <a href=https://june.fish/projects style="margin-right: 0.5em">/projects</a>
+        
+            <a href=https://june.fish/talks style="margin-right: 0.5em">/talks</a>
+        
+
+        
+
+        
+        
+            <a id="dark-mode-toggle"
+               onclick="toggleTheme(); event.preventDefault();"
+               href="#">
+                <img src="https://june.fish/icons/sun.svg" id="sun-icon" alt="Light" />
+                <img src="https://june.fish/icons/moon.svg"
+                     id="moon-icon"
+                     style="filter: invert(1)"
+                     alt="Dark" />
+                
+            </a>
+
+            <!-- Initialize the theme toggle icons -->
+            <script>
+                updateItemToggleTheme()
+            </script>
+        
+    </div>
+</nav>
+
+
+            
+            
+    
+        
+
+    <div class="page-header">
+        Talks
+    </div>
+
+
+    
+
+    
+
+    <main>
+<div class="talks-grid">
+        <div class="talk-card">
+            <!-- Either link to the video or to the static page  -->
+            
+                
+            
+
+            <a class="talk-video"
+               href="https://www.youtube.com/watch?v=wMd--24xsFQ"
+               target="_blank"
+               rel="noopener">
+                <div class="talk-video">
+                    
+                        <!-- TODO: Add srcset -->
+                        
+                        <img class="talk-image"
+                             loading="lazy"
+                             decoding="async"
+                             sizes="(max-width: 640px) 100vw,
+                                    (max-width: 1024px) 50vw,
+                                    33vw"
+                             alt="Thumbnail for the talk"
+                             src="https://june.fish/processed_images/notes-from-downstream.75ad04db5bd7e52b.webp" />
+                        <div class="video-play-btn">
+                            <div class="rounded-btn">
+                                <svg width="24"
+                                     height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="currentColor"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" stroke="currentColor" clip-rule="evenodd" d="M8.00625 2.80243C8.0182 2.8104 8.03019 2.81839 8.04222 2.82642L18.591 9.8589C18.8962 10.0623 19.1792 10.251 19.3965 10.4263C19.6234 10.6092 19.8908 10.8629 20.0447 11.234C20.2481 11.7245 20.2481 12.2758 20.0447 12.7663C19.8908 13.1374 19.6234 13.391 19.3965 13.574C19.1792 13.7493 18.8962 13.9379 18.591 14.1413L8.00628 21.1978C7.63319 21.4465 7.29772 21.6702 7.01305 21.8245C6.72818 21.9789 6.33717 22.1553 5.8808 22.128C5.29705 22.0932 4.75779 21.8046 4.40498 21.3382C4.12916 20.9736 4.05905 20.5504 4.02949 20.2278C3.99994 19.9053 3.99997 19.5021 4 19.0537L4 4.98975C4 4.97529 4 4.96087 4 4.9465C3.99997 4.49811 3.99994 4.09491 4.02949 3.77249C4.05905 3.44983 4.12916 3.02663 4.40498 2.66202C4.75779 2.19565 5.29705 1.90705 5.8808 1.87219C6.33717 1.84494 6.72818 2.02135 7.01305 2.17573C7.29771 2.33 7.63317 2.55368 8.00625 2.80243Z" fill="currentColor">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    
+
+                </div>
+            </a>
+
+            <div class="talk-info">
+                <h1 class="talk-title">
+                    
+                        <a href=https://www.youtube.com/watch?v=wMd--24xsFQ>Notes from Downstream</a>
+                    
+
+                </h1>
+
+                <div class="talk-description">
+                    
+                        How and why we maintain Ultramarine Linux and Terra
+                    
+                </div>
+
+                <!-- Filler element to keep the .meta at the bottom -->
+                <div style="flex-grow: 1;">
+                </div>
+
+                <div class="meta">
+                        
+
+    <span class="icon-button  disabled" aria-disabled="true">
+        
+            <img src="https://june.fish/icons/calendar.svg" alt="calendar" />
+        
+        August 07, 2024
+    </span>
+
+
+                    
+                        
+
+    <a href="https://fedoraproject.org/flock/2024/"
+       class="icon-button "
+       target="_blank"
+       rel="noopener">
+        
+            <img src="https://june.fish/icons/map-pin.svg" alt="map-pin" />
+        
+        Flock to Fedora
+    </a>
+
+
+                    
+
+                    
+
+                    
+
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </main>
+
+    
+
+
+            
+                
+            
+
+            
+        </div>
+
+        <div class="right-content">
+            
+            
+        </div>
+        <style>
+  .blogring {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  @media {
+    body {
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+
+    .blogring {
+      flex: 1 0 100%;
+    }
+  }
+</style>
+
+<div class="blogring">
+    <strong> <a href="https://blogclub.org/">blogring</a>: </strong>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=prev">⏪</a>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=random">🔀</a>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=next">⏩</a>
+</div>
+
+    </body>
+
+</html>

@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    
+<head>
+    
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="base" content="https://june.fish" />
+
+    
+        <meta name="fediverse:creator"
+              content="@june@ordinary.cafe" />
+    
+
+    
+
+    
+    
+    
+        <title>
+junefish
+</title>
+        
+            <meta property="og:title" content="
+junefish
+" />
+        
+
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+    
+        <link rel="icon"
+              type="image/png"
+              href="https://june.fish/favicon.png" />
+    
+
+    
+    
+        <link href=https://june.fish/fonts.css rel="stylesheet" />
+    
+
+    
+    
+        
+
+        
+            
+            
+
+            <script data-goatcounter="https://junefish.goatcounter.com/count"
+                    async
+                    src="https://june.fish/js/count.js"></script>
+            <noscript>
+                
+                <img src="https://junefish.goatcounter.com//count?p=/&t=junefish" />
+            </noscript>
+        
+
+        
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+    
+
+    
+    
+        
+            <link id="syntaxLightStyle"
+                  rel="stylesheet"
+                  type="text/css"
+                  href="https://june.fish/giallo-light.css" />
+            <link id="syntaxDarkStyle"
+                  rel="stylesheet"
+                  type="text/css"
+                  href="https://june.fish/giallo-dark.css"
+                  disabled />
+        
+    
+
+    
+    
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://june.fish/theme/light.css" />
+        <link id="darkModeStyle"
+              rel="stylesheet"
+              type="text/css"
+              href="https://june.fish/theme/dark.css" />
+    
+
+    
+        
+            <script>
+                var themeToggleMode = "toggle";
+            </script>
+        
+        <script src=https://june.fish/js/themetoggle.js></script>
+
+        
+            <script>
+                setTheme(getSavedTheme());
+            </script>
+        
+    
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="https://june.fish/main.css" />
+
+    
+
+    <style>
+  @font-face {
+    font-family: "Adwaita Sans";
+    src: url("https://june.fish/fonts/AdwaitaSans-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Sans";
+    src: url("https://june.fish/fonts/AdwaitaSans-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+
+  :root.light {
+    --primary-color: #e4821f;
+    --bg-0: #eee;
+    --bg-1: #ddd;
+    --bg-2: #ccc;
+  }
+  :root.dark {
+    --primary-color: #e4821f;
+    --bg-0: #111;
+    --bg-1: #222;
+    --bg-2: #333;
+  }
+  :root {
+    --text-font: "Adwaita Mono";
+    --header-font: "Liberation Serif";
+    --code-font: "Adwaita Mono";
+    --mono-text-font: "Adwaita Mono";
+  }
+  nav a {
+    font-family: "Liberation Serif";
+    --text-font: "Liberation Serif";
+  }
+</style>
+
+</head>
+
+
+    <body>
+        
+
+        <div class="left-content">
+            
+            
+        </div>
+
+        <div class="content">
+            <nav>
+    <div class="left-nav">
+        
+            <a href=https://june.fish>junefish</a>
+        
+
+
+        <div class="socials">
+            
+                
+            
+            
+                <a rel='me' href="mailto:web@june.fish" class="social">
+                    <img alt="email"
+                         src="https://june.fish/icons/social/email.svg" />
+                </a>
+            
+                <a rel='me' href="https://ordinary.cafe/@june" class="social">
+                    <img alt="mastodon"
+                         src="https://june.fish/icons/social/mastodon.svg" />
+                </a>
+            
+                <a rel='me' href="https://github.com/june-fish" class="social">
+                    <img alt="github"
+                         src="https://june.fish/icons/social/github.svg" />
+                </a>
+            
+                <a rel='me' href="https://codeberg.org/june-fish" class="social">
+                    <img alt="codeberg"
+                         src="https://june.fish/icons/social/codeberg.svg" />
+                </a>
+            
+                <a rel='me' href="https://sr.ht/~junefish/" class="social">
+                    <img alt="codeberg"
+                         src="https://june.fish/icons/social/sourcehut.svg" />
+                </a>
+            
+        </div>
+    </div>
+
+    <div class="right-nav">
+        
+            <a href=https://june.fish/posts style="margin-right: 0.5em">/posts</a>
+        
+            <a href=https://june.fish/projects style="margin-right: 0.5em">/projects</a>
+        
+            <a href=https://june.fish/talks style="margin-right: 0.5em">/talks</a>
+        
+
+        
+
+        
+        
+            <a id="dark-mode-toggle"
+               onclick="toggleTheme(); event.preventDefault();"
+               href="#">
+                <img src="https://june.fish/icons/sun.svg" id="sun-icon" alt="Light" />
+                <img src="https://june.fish/icons/moon.svg"
+                     id="moon-icon"
+                     style="filter: invert(1)"
+                     alt="Dark" />
+                
+            </a>
+
+            <!-- Initialize the theme toggle icons -->
+            <script>
+                updateItemToggleTheme()
+            </script>
+        
+    </div>
+</nav>
+
+
+            
+            
+    
+<main>
+    <article>
+        <section class="body">
+            <div class="page-header" style="display: flex; align-items: center;">
+                <img height="150px" src="/images/fishe-smol.png" />
+                blub blub
+            </div>
+            <p>Hello!
+I am June, a fish who does things on the computer.
+You can find some examples of things I have done on the computer at <a href="/projects">/projects</a>.
+You can find me talking about things I have done on the computer online at <a href="/posts">/posts</a>, and in person at <a href="/talks">/talks</a>.
+This list is non-exhaustive and is likely to be expanded soon!</p>
+
+        </section>
+    </article>
+</main>
+
+    
+<style>
+  .tiles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10vh;
+      flex-wrap: wrap;
+      a {
+          &:hover {
+              background-color: var(--background-color);
+          }
+      }
+      img {
+            border-radius: 0;
+      }
+  }
+</style>
+<div class="tiles">
+    
+    <a href="https://fyrastack.com">
+        <img src="https://june.fish/images/tiles/hostedonstack.webp" alt="hosted on fyrastack" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://jaiden.sh">
+        <img src="https://june.fish/images/tiles/jaiden.png" alt="jaiden.sh" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://fyralabs.com">
+        <img src="https://june.fish/images/tiles/fyralabs.png" alt="fyralabs" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://ultramarine-linux.org">
+        <img src="https://june.fish/images/tiles/ultramarine.png" alt="ultramarine" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://terrapkg.com">
+        <img src="https://june.fish/images/tiles/terrapkg.png" alt="terrapkg software for computer" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://www.firefox.com">
+        <img src="https://june.fish/images/tiles/firefox.gif" alt="firefox" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://fedoraproject.org">
+        <img src="https://june.fish/images/tiles/fedora.gif" alt="powered by fedora" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://nixos.org">
+        <img src="https://june.fish/images/tiles/nixos.gif" alt="powered by nixos" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://en.wikipedia.org/wiki/CD-ROM">
+        <img src="https://june.fish/images/tiles/luxdotcom.png" alt="lux.com" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="https://neovim.io">
+        <img src="https://june.fish/images/tiles/neovim.gif" alt="made with neovim" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+    <a href="">
+        <img src="https://june.fish/images/tiles/builteatingcheezit.gif" alt="built eating cheez it" loading="lazy" width=88 height=31 style="padding: 2px;">
+    </a>
+    
+</div>
+
+
+
+            
+                
+            
+
+            
+        </div>
+
+        <div class="right-content">
+            
+            
+        </div>
+        <style>
+  .blogring {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  @media {
+    body {
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+
+    .blogring {
+      flex: 1 0 100%;
+    }
+  }
+</style>
+
+<div class="blogring">
+    <strong> <a href="https://blogclub.org/">blogring</a>: </strong>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=prev">⏪</a>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=random">🔀</a>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=next">⏩</a>
+</div>
+
+    </body>
+
+</html>

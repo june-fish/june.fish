@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    
+<head>
+    
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="base" content="https://june.fish" />
+
+    
+        <meta name="fediverse:creator"
+              content="@june@ordinary.cafe" />
+    
+
+    
+
+    
+    
+    
+        <title>
+            
+                Fyra Stack
+            
+        </title>
+
+        
+            <meta property="og:title"
+                  content="Fyra Stack" />
+        
+    
+
+    
+        
+            <meta property="og:description" content="I work on Fyra Stack, an open source cloud infrastructure provider." />
+        
+    
+
+    
+        
+            <meta name="description" content="I work on Fyra Stack, an open source cloud infrastructure provider." />
+        
+    
+
+    
+    
+        <link rel="icon"
+              type="image/png"
+              href="https://june.fish/favicon.png" />
+    
+
+    
+    
+        <link href=https://june.fish/fonts.css rel="stylesheet" />
+    
+
+    
+    
+        
+
+        
+            
+            
+
+            <script data-goatcounter="https://junefish.goatcounter.com/count"
+                    async
+                    src="https://june.fish/js/count.js"></script>
+            <noscript>
+                
+                <img src="https://junefish.goatcounter.com//count?p=/projects/fyrastack/&t=Fyra Stack" />
+            </noscript>
+        
+
+        
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+    
+
+    
+    
+        
+            <link id="syntaxLightStyle"
+                  rel="stylesheet"
+                  type="text/css"
+                  href="https://june.fish/giallo-light.css" />
+            <link id="syntaxDarkStyle"
+                  rel="stylesheet"
+                  type="text/css"
+                  href="https://june.fish/giallo-dark.css"
+                  disabled />
+        
+    
+
+    
+    
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://june.fish/theme/light.css" />
+        <link id="darkModeStyle"
+              rel="stylesheet"
+              type="text/css"
+              href="https://june.fish/theme/dark.css" />
+    
+
+    
+        
+            <script>
+                var themeToggleMode = "toggle";
+            </script>
+        
+        <script src=https://june.fish/js/themetoggle.js></script>
+
+        
+            <script>
+                setTheme(getSavedTheme());
+            </script>
+        
+    
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="https://june.fish/main.css" />
+
+    
+
+    <style>
+  @font-face {
+    font-family: "Adwaita Sans";
+    src: url("https://june.fish/fonts/AdwaitaSans-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Sans";
+    src: url("https://june.fish/fonts/AdwaitaSans-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Adwaita Mono";
+    src: url("https://june.fish/fonts/AdwaitaMono-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Sans";
+    src: url("https://june.fish/fonts/LiberationSans-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Liberation Serif";
+    src: url("https://june.fish/fonts/LiberationSerif-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+
+  :root.light {
+    --primary-color: #e4821f;
+    --bg-0: #eee;
+    --bg-1: #ddd;
+    --bg-2: #ccc;
+  }
+  :root.dark {
+    --primary-color: #e4821f;
+    --bg-0: #111;
+    --bg-1: #222;
+    --bg-2: #333;
+  }
+  :root {
+    --text-font: "Adwaita Mono";
+    --header-font: "Liberation Serif";
+    --code-font: "Adwaita Mono";
+    --mono-text-font: "Adwaita Mono";
+  }
+  nav a {
+    font-family: "Liberation Serif";
+    --text-font: "Liberation Serif";
+  }
+</style>
+
+</head>
+
+
+    <body>
+        
+
+        <div class="left-content">
+            
+            
+        </div>
+
+        <div class="content">
+            <nav>
+    <div class="left-nav">
+        
+            <a href=https://june.fish>junefish</a>
+        
+
+
+        <div class="socials">
+            
+                
+            
+            
+                <a rel='me' href="mailto:web@june.fish" class="social">
+                    <img alt="email"
+                         src="https://june.fish/icons/social/email.svg" />
+                </a>
+            
+                <a rel='me' href="https://ordinary.cafe/@june" class="social">
+                    <img alt="mastodon"
+                         src="https://june.fish/icons/social/mastodon.svg" />
+                </a>
+            
+                <a rel='me' href="https://github.com/june-fish" class="social">
+                    <img alt="github"
+                         src="https://june.fish/icons/social/github.svg" />
+                </a>
+            
+                <a rel='me' href="https://codeberg.org/june-fish" class="social">
+                    <img alt="codeberg"
+                         src="https://june.fish/icons/social/codeberg.svg" />
+                </a>
+            
+                <a rel='me' href="https://sr.ht/~junefish/" class="social">
+                    <img alt="codeberg"
+                         src="https://june.fish/icons/social/sourcehut.svg" />
+                </a>
+            
+        </div>
+    </div>
+
+    <div class="right-nav">
+        
+            <a href=https://june.fish/posts style="margin-right: 0.5em">/posts</a>
+        
+            <a href=https://june.fish/projects style="margin-right: 0.5em">/projects</a>
+        
+            <a href=https://june.fish/talks style="margin-right: 0.5em">/talks</a>
+        
+
+        
+
+        
+        
+            <a id="dark-mode-toggle"
+               onclick="toggleTheme(); event.preventDefault();"
+               href="#">
+                <img src="https://june.fish/icons/sun.svg" id="sun-icon" alt="Light" />
+                <img src="https://june.fish/icons/moon.svg"
+                     id="moon-icon"
+                     style="filter: invert(1)"
+                     alt="Dark" />
+                
+            </a>
+
+            <!-- Initialize the theme toggle icons -->
+            <script>
+                updateItemToggleTheme()
+            </script>
+        
+    </div>
+</nav>
+
+
+            
+            
+    
+<div class="visible-element-observer-root" data-selector="main article p">
+    <main>
+        <article>
+            <div class="title">
+                
+                
+
+    <div class="page-header">
+        Fyra Stack
+    </div>
+
+
+
+                <div class="meta">
+                    
+                        Posted on <time>2026-02-26</time>
+                    
+
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+
+                    
+                    
+
+                    
+                    
+
+                    
+
+                </div>
+            </div>
+
+            
+
+            <section class="body">
+                
+            </section>
+        </article>
+    </main>
+</div>
+
+
+
+            
+                
+            
+
+            
+        </div>
+
+        <div class="right-content">
+            
+    
+    
+
+        </div>
+        <style>
+  .blogring {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  @media {
+    body {
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+
+    .blogring {
+      flex: 1 0 100%;
+    }
+  }
+</style>
+
+<div class="blogring">
+    <strong> <a href="https://blogclub.org/">blogring</a>: </strong>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=prev">⏪</a>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=random">🔀</a>
+    <a href="https://blogclub.org/ring/?from=june.fish&to=next">⏩</a>
+</div>
+
+    </body>
+
+</html>
