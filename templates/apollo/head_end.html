@@ -5,4 +5,24 @@
   :root.dark{
     --primary-color: #e4821f;
   }
+  :root {
+    @font-face {
+      font-family: "Adwaita Sans";
+      src:
+        url("AdwaitaSans-Italic.ttf");
+        url("AdwaitaSans-Regular.ttf");
+    }
+    @font-face {
+      font-family: "Adwaita Mono";
+      src:
+        url("AdwaitaMono-BoldItalic.ttf");
+        url("AdwaitaMono-Bold.ttf");
+        url("AdwaitaMono-Italic.ttf");
+        url("AdwaitaMono-Regular.ttf");
+    };
+    --text-font: "Adwaita Sans";
+    --header-font: "Adwaita Sans";
+    --code-font: "Adwaita Mono";
+    --mono-text-font: "Adwaita Mono";
+  }
 </style>
