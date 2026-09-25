@@ -18,7 +18,7 @@
 <div class="tiles">
     {% for tile in tiles %}
     <a href="{{ tile.url }}">
-      <img src="{{ get_url(path=tile.img) }}" loading="lazy" width=88 height=31 style="padding: 2px;">
+        <img src="{{ get_url(path=tile.img) }}" alt="{{ tile.alt }}" loading="lazy" width=88 height=31 style="padding: 2px;">
     </a>
     {% endfor %}
 </div>
